@@ -23,7 +23,8 @@ st.sidebar.markdown("Verwende die Schieberegler, um die Koeffizienten der Van-De
 A = st.sidebar.slider(
     'A: Eddy-Diffusion',
     min_value=0.0, max_value=2.0, value=0.5, step=0.01,
-    help="Die Eddy-Diffusion ist unabhängig von der Flussrate. Ein höherer Wert erhöht H bei allen Flussraten."
+    help="Die Eddy-Diffusion ist unabhängig von der Flussrate. Ein höherer Wert erhöht H bei allen Flussraten.",
+    font_size=16
 )
 B = st.sidebar.slider(
     'B: Longitudinale Diffusion',
@@ -96,6 +97,7 @@ fig.update_layout(
     xaxis_title="Lineare Flussrate (u)",
     xaxis_title_font_size=18,
     yaxis_title="Bodenhöhe (H)",
+    yaxis_title_font_size=18,
     xaxis=dict(gridcolor='#e5e7eb'),
     yaxis=dict(gridcolor='#e5e7eb'),
     hovermode='closest'
