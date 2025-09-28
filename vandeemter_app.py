@@ -49,7 +49,7 @@ def van_deemter(u, A, B, C):
     return A + B / u + C * u
 
 # Create a range of flow rates for plotting
-u_values = np.linspace(1, 200, 400)
+u_values = np.linspace(0.01, 200, 400)
 H_values = van_deemter(u_values, A, B, C)
 
 # Find the optimal flow rate (u_opt) and minimum plate height (H_min)
