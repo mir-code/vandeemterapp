@@ -2,7 +2,6 @@
 # $ conda create --name <env> --file <this file>
 # platform: osx-arm64
 # created-by: conda 24.11.3
-_python_abi3_support=1.0=hd8ed1ab_2
 accelerate=1.10.1=pyhcf101f3_0
 adwaita-icon-theme=48.1=unix_1
 altair=5.5.0=pyhd8ed1ab_1
