@@ -101,8 +101,8 @@ fig.update_layout(
 )
 
 # axes label sizes
-fig.update_xaxes(tickfont=dict(size=18))
-fig.update_yaxes(tickfont=dict(size=18))
+fig.update_xaxes(tickfont=dict(size=18), title_font=dict(size=20))
+fig.update_yaxes(tickfont=dict(size=18), title_font=dict(size=20))
 
 # Display the plot in Streamlit
 st.plotly_chart(fig, use_container_width=True)
