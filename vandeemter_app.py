@@ -94,6 +94,7 @@ fig.update_layout(
     title_text="Van-Deemter-Diagramm",
     title_font_size=20,
     xaxis_title="Lineare Flussrate (u)",
+    xaxis_title_font_size=18,
     yaxis_title="Bodenhöhe (H)",
     xaxis=dict(gridcolor='#e5e7eb'),
     yaxis=dict(gridcolor='#e5e7eb'),
@@ -101,8 +102,8 @@ fig.update_layout(
 )
 
 # axes label sizes
-fig.update_xaxes(tickfont=dict(size=18), title_font=dict(size=20))
-fig.update_yaxes(tickfont=dict(size=18), title_font=dict(size=20))
+fig.update_xaxes(tickfont=dict(size=16))
+fig.update_yaxes(tickfont=dict(size=16))
 
 # Display the plot in Streamlit
 st.plotly_chart(fig, use_container_width=True)
