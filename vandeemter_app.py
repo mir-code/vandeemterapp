@@ -76,7 +76,7 @@ fig.add_trace(go.Scatter(
     x=[u_opt],
     y=[H_min],
     mode='markers',
-    marker=dict(color='red', size=10, symbol='circle'),
+    marker=dict(color='red', size=12, symbol='circle'),
     name=f'Optimal: u={u_opt:.2f}, H={H_min:.2f}'
 ))
 
@@ -85,7 +85,7 @@ fig.add_trace(go.Scatter(
     x=[current_u],
     y=[H_current],
     mode='markers',
-    marker=dict(color='blue', size=10, symbol='circle'),
+    marker=dict(color='blue', size=12, symbol='circle'),
     name=f'Ausgewählt: u={current_u:.2f}, H={H_current:.2f}'
 ))
 
@@ -99,6 +99,10 @@ fig.update_layout(
     yaxis=dict(gridcolor='#e5e7eb'),
     hovermode='closest'
 )
+
+# axes label sizes
+fig.update_xaxes(tickfont=dict(size=18))
+fig.update_yaxes(tickfont=dict(size=18))
 
 # Display the plot in Streamlit
 st.plotly_chart(fig, use_container_width=True)
