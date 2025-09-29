@@ -43,6 +43,8 @@ current_u = st.sidebar.slider(
     help="Die lineare Flussrate der mobilen Phase."
 )
 
+st.sidebar.image('qr.png')
+
 # --- Van Deemter Equation Logic ---
 def van_deemter(u, A, B, C):
     """Calculates plate height (H) based on the Van Deemter equation."""
